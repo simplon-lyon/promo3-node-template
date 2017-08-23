@@ -53,7 +53,7 @@ app.get("/", function(req, resp) {
 });
 ```
 
-### Second Template
+### Render An Array
 
 1. add an array of data to `index.js`:
 
@@ -63,3 +63,11 @@ let db = ["Toto", "Tata", "Titi", "John", "Tutu"];
 
 2. edit the `/` handler and pass the `db` array to the `render` function
 3. edit the template to display the data
+
+### Render A Function
+
+We want to add a visit counter to our website. To do so:
+
+1. create a function `counter` wich increment a variable each for each call and return the number of time it has been call
+2. edit the `/` handler and pass the `counter` function to `render`
+3. edit `template/index.html` to call `counter`
