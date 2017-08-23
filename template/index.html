@@ -12,6 +12,12 @@
     <h1>Node Template Server</h1>
     <p>An example server using Node and a template engine.</p>
     <p>Welcome {{name}}!!! You are {{adjective}} today!</p>
+
+    <ul>
+        {{#nameList}}
+        <li>{{.}}</li>
+        {{/nameList}}
+    </ul>
 </body>
 
 </html>

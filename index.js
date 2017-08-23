@@ -9,7 +9,8 @@ let app = express();
 app.get("/", function(req, resp) {
     resp.render('index', {
         name: 'Toto',
-        adjective: 'happy'
+        adjective: 'happy',
+        nameList: db
     });
 });
 
